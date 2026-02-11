@@ -6,9 +6,9 @@
 Student ReadStudentRecFromStream(std::istream& is) {
     Student student;
     std::string firstName, lastName;
-    unsigned int uin = 0;        // ← 加上 = 0
-    char comma = '\0';           // ← 加上 = '\0'
-    double gpa = 0.0;            // ← 加上 = 0.0
+    unsigned int uin = 0;      
+    char comma = '\0';       
+    double gpa = 0.0;            
     
     is >> firstName;
     if (is.fail()) return Student{};
